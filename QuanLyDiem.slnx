@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Class-lop/Class-lop.csproj" Id="4624bcdd-df01-41e1-96db-c3a73eb636c2" />
+  <Project Path="CodeLogic/CodeLogic.csproj" Id="47a79bdd-8e62-4cea-bc3e-f6349d2bde05" />
+  <Project Path="Database/Database.csproj" Id="8e540820-cab5-4323-8989-e52a2eca3f68" />
+  <Project Path="FrmMain/UI.csproj" Id="f1dacddd-b0c5-494b-91e1-c4ef09ec0075" />
+</Solution>
