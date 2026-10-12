@@ -416,17 +416,17 @@ BEGIN
         (MaSV, MaLopHP, DiemCC, DiemGK, DiemCK,
          DiemTongKet, XepLoai, DaKhoa)
     VALUES
-        (@MaSV, @MaLopHP, @CC, @GK, @CK,
-         @TongKet, @XepLoai, 0);
+        (@MaSV, @MaLopHP, @diemcc, @diemgk, @diemck
+         @diemTongKet, @XepLoai, 0);
 END
 ", conn))
                 {
                     cmd.Parameters.Add("@MaSV", SqlDbType.VarChar, 100).Value = maSV;
                     cmd.Parameters.Add("@MaLopHP", SqlDbType.VarChar, 100).Value = maLopHP;
-                    cmd.Parameters.Add("@CC", SqlDbType.Decimal).Value = cc;
-                    cmd.Parameters.Add("@GK", SqlDbType.Decimal).Value = gk;
-                    cmd.Parameters.Add("@CK", SqlDbType.Decimal).Value = ck;
-                    cmd.Parameters.Add("@TongKet", SqlDbType.Decimal).Value = tong;
+                    cmd.Parameters.Add("@diemcc", SqlDbType.Decimal).Value = cc;
+                    cmd.Parameters.Add("@diemgk", SqlDbType.Decimal).Value = gk;
+                    cmd.Parameters.Add("@diemck", SqlDbType.Decimal).Value = ck;
+                    cmd.Parameters.Add("@diemTongKet", SqlDbType.Decimal).Value = tong;
                     cmd.Parameters.Add("@XepLoai", SqlDbType.NVarChar, 100).Value = xepLoai;
 
                     conn.Open();
